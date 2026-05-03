@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Replacer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .rule {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .rule disabled {
+      opacity: 0.6;
+    }
+    input, button {
+      margin: 5px 0;
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button.delete {
+      background: #f44336;
+    }
+    button:disabled {
+      background: #cccccc;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+  <h3>Site Replacer</h3>
+  <div id="rules-list"></div>
+  <input type="text" id="root-url" placeholder="Root Sheet URL">
+  <button id="update-root-url">Update root URL</button>
+  <script src="popup.js"></script>
+</body>
+</html>
